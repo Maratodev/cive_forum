@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center"
+              android:layout_gravity="center"
+              android:background="@color/dark_blue"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:foregroundGravity="center" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <TextView android:textSize="60.0sp"
+              android:textColor="@color/white"
+              android:layout_gravity="start"
+              android:id="@id/cive"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="CIVE"
+              android:fontFamily="@font/kenia" />
+    <TextView android:textSize="120.0sp"
+              android:textColor="@color/white"
+              android:id="@id/f"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="F"
+              android:fontFamily="@font/kenia" />
+    <TextView android:textSize="60.0sp"
+              android:textColor="@color/white"
+              android:id="@id/orum"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="ORUM"
+              android:fontFamily="@font/kenia" />
+  </LinearLayout>
+</LinearLayout>

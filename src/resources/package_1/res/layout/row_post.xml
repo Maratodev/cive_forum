@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.cardview.widget.CardView android:orientation="vertical"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      civeforum:cardBackgroundColor="@color/white"
+                      civeforum:cardCornerRadius="3.0dp"
+                      civeforum:cardElevation="5.0dp"
+                      civeforum:cardUseCompatPadding="true"
+                      civeforum:contentPadding="5.0dp" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:civeforum="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical"
+                  android:orientation="horizontal"
+                  android:id="@id/profilelayout"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+      <de.hdodenhof.circleimageview.CircleImageView android:id="@id/picturetv"
+                            android:layout_width="50.0dp"
+                            android:layout_height="50.0dp"
+                            android:src="@drawable/profile_image"
+                            android:scaleType="centerCrop" />
+      <LinearLayout android:orientation="vertical"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+        <TextView android:textSize="20.0sp"
+                  android:id="@id/unametv"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Name"
+                  android:fontFamily="@font/lora" />
+        <TextView android:textSize="12.0sp"
+                  android:id="@id/utimetv"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="33 min"
+                  android:fontFamily="@font/lora_italic" />
+      </LinearLayout>
+      <ImageButton android:id="@id/morebtn"
+                   android:background="@null"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp"
+              android:textStyle="bold"
+              android:id="@id/ptitletv"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="Title"
+              android:fontFamily="@font/lora" />
+    <TextView android:id="@id/descript"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="Description"
+              android:fontFamily="@font/lora" />
+    <View android:background="#f5f0f0"
+          android:layout_width="fill_parent"
+          android:layout_height="1.0dp" />
+    <LinearLayout android:gravity="center"
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+      <Button android:textSize="18.0sp"
+              android:textStyle="bold"
+              android:textColor="@color/dark_blue_bar"
+              android:autoLink="all"
+              android:id="@id/participateButton"
+              android:padding="5.0dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Participate"
+              android:layout_weight="1.0"
+              android:fontFamily="@font/lora"
+              android:backgroundTint="@color/white" />
+    </LinearLayout>
+  </LinearLayout>
+</androidx.cardview.widget.CardView>

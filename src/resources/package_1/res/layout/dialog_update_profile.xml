@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:padding="20.0dp"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:civeforum="http://schemas.android.com/apk/res-auto">
+  <TextView android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Password"
+            android:fontFamily="@font/lora"
+            android:textAlignment="center" />
+  <com.google.android.material.textfield.TextInputLayout android:id="@id/oldpass"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20.0dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        civeforum:passwordToggleEnabled="true">
+    <EditText android:id="@id/oldpasslog"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:hint="Old Password"
+              android:inputType="textPassword"
+              android:fontFamily="@font/lora" />
+  </com.google.android.material.textfield.TextInputLayout>
+  <com.google.android.material.textfield.TextInputLayout android:id="@id/newpass"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_below="@id/oldpasslog"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        civeforum:passwordToggleEnabled="true">
+    <EditText android:id="@id/newpasslog"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:hint="New Password"
+              android:inputType="textPassword"
+              android:fontFamily="@font/lora" />
+  </com.google.android.material.textfield.TextInputLayout>
+  <Button android:textStyle="bold"
+          android:layout_gravity="center_horizontal"
+          android:id="@id/updatepass"
+          android:layout_width="380.0dp"
+          android:layout_height="50.0dp"
+          android:layout_marginTop="20.0dp"
+          android:text="Update Password"
+          android:fontFamily="@font/lora"
+          style="@style/Widget.AppCompat.Button.Colored" />
+</LinearLayout>

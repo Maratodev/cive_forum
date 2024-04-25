@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<ScrollView android:layout_width="fill_parent"
+            android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <LinearLayout android:background="@color/dark_blue"
+                  android:layout_width="fill_parent"
+                  android:layout_height="60.0dp">
+      <TextView android:textSize="25.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Topic"
+                android:fontFamily="@font/lora" />
+    </LinearLayout>
+    <EditText android:layout_gravity="center"
+              android:id="@id/ptitle"
+              android:background="@drawable/edit_text_back"
+              android:padding="10.0dp"
+              android:layout_width="380.0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20.0dp"
+              android:minHeight="60.0dp"
+              android:hint="Title"
+              android:singleLine="true"
+              android:fontFamily="@font/lora" />
+    <EditText android:gravity="start"
+              android:layout_gravity="center"
+              android:id="@id/pdes"
+              android:background="@drawable/edit_text_back"
+              android:padding="10.0dp"
+              android:layout_width="380.0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15.0dp"
+              android:minHeight="120.0dp"
+              android:hint="Description"
+              android:singleLine="true"
+              android:inputType="textCapSentences|textMultiLine"
+              android:fontFamily="@font/lora" />
+    <Button android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@id/pupload"
+            android:layout_width="380.0dp"
+            android:layout_height="50.0dp"
+            android:layout_marginTop="30.0sp"
+            android:text="Add"
+            android:fontFamily="@font/lora"
+            android:textAlignment="center"
+            style="@style/Widget.AppCompat.Button.Colored" />
+  </LinearLayout>
+</ScrollView>
